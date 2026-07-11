@@ -55,8 +55,8 @@ PY = {
 
 UID = {
     'A1111': {
-        'repo': 'https://github.com/gutris1/A1111',
-        'branch': 'master',
+        'repo': '-b dev https://github.com/AUTOMATIC1111/stable-diffusion-webui A1111',
+        'branch': 'dev',
 
         'sym': lambda M: ['rm -rf ' + ' '.join(str(M / t) for _, t in LINKS['A1111'])],
         'links': lambda M: ((TMP / p, M / t) for p, t in LINKS['A1111']),
