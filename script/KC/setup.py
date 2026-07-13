@@ -146,7 +146,7 @@ def _symlinks(M):
 def _reqs(W, M):
     CD(W)
 
-    if ui != 'SwarmUI': pull(f'https://github.com/gutris1/segsmaker {ui.lower()} {W}')
+    if ui != 'SwarmUI': pull(f'https://github.com/smit86170-create/segsmaker {ui.lower()} {W}')
 
     else:
         M.mkdir(parents=True, exist_ok=True)
@@ -280,7 +280,7 @@ def _scripts():
 
     for scripts in [nenen, melon, uid, MRK]: get_ipython().run_line_magic('run', str(scripts))
 
-G = 'https://raw.githubusercontent.com/gutris1/segsmaker/main'
+G = 'https://raw.githubusercontent.com/smit86170-create/segsmaker/main'
 
 USR = Path('/usr/bin')
 STR = Path('/root/.ipython/profile_default/startup')
